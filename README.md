@@ -8,6 +8,22 @@ fit-initialization networks. Runtime inference uses NumPy and SciPy. The
 physical-parameter route uses WD_models for the WD and a bundled PARSEC
 main-sequence subset for the companion.
 
+## Interactive notebook
+
+Open [wdms_selection.ipynb](wdms_selection.ipynb) for the full simulation-to-selection
+experiment, including component photometry, an XP fit, repeated noise draws,
+selection fractions, and a comparison of chi-squared thresholds on the same fits.
+
+```bash
+python -m pip install -r requirements-notebook.txt
+jupyter lab wdms_selection.ipynb
+```
+
+Start Jupyter from this repository directory and run the cells in order. Replace
+`INPUT_CSV` with your simulation table. The notebook downloads WD_models if needed
+and saves per-draw/per-system CSV tables, spectra, and figures in `results_notebook/`.
+The default example runs nine binaries with ten noise draws each.
+
 ## Run the example
 
 Python 3.10 or newer:
