@@ -19,10 +19,12 @@ python -m pip install -r requirements-notebook.txt
 jupyter lab wdms_selection.ipynb
 ```
 
-Start Jupyter from this repository directory and run the cells in order. Replace
-`INPUT_CSV` with your simulation table. The notebook downloads WD_models if needed
-and saves per-draw/per-system CSV tables, spectra, and figures in `results_notebook/`.
-The default example runs nine binaries with ten noise draws each.
+Start Jupyter from this repository directory and run the cells in order. The default
+input is component CMD photometry, so no WD_models download or physical conversion
+is needed. Replace `INPUT_CSV` with your table; physical-parameter inputs automatically
+use the optional WD_models/PARSEC conversion. Each component needs BP−RP, M_G,
+and M_RP. Results are saved in `results_notebook/`. The example runs nine binaries
+with ten noise draws each.
 
 ## Run the example
 
