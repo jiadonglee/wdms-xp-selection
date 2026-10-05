@@ -1,0 +1,5 @@
+__pycache__/
+.venv/
+external/
+results*/
+.DS_Store
